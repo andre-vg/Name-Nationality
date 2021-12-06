@@ -1,0 +1,46 @@
+/*
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+*/
+/* 
+    Created on : 06/12/2021, 10:15:37
+    Author     : agonçalves
+*/
+
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
+
+.titulo h1{
+    font-family: 'Bebas Neue', cursive;
+    font-size: 5em;    
+    text-align: center;
+}
+.titulo{
+    padding-top: 30%;
+    margin: auto;
+    width: 50%;
+    text-align: center;
+}
+.box_name{
+    margin: auto;
+    display: block;
+    width: 100%;
+    text-align: center;
+    position: relative;
+}
+.box_name input[type=text]{
+    height: 40px;
+    width: 450px;
+    margin-bottom: 25px;
+}
+#nome{
+    margin: 0;
+    position: absolute;
+    left: 50%;
+    -ms-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+}
+
+.form-nome {
+
+}
