@@ -15,11 +15,11 @@
     <body>
         <code>
             <%
-            String nome = request.getParameter("nome");
-            System.out.println(nome);
-            JSONObject json = so4308554.JsonReader.readJsonFromUrl("https://api.nationalize.io/?name="+nome);
+            String nome;
+            nome = request.getParameter("name");
+            JSONObject json = so4308554.JsonReader.readJsonFromUrl("https://api.nationalize.io/?name=" + nome);
             String url = json.toString();
-            
+            System.out.println(url);
             %>
         </code>
         <h3><%=url%></h3>

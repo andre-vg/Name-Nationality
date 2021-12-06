@@ -48,17 +48,11 @@ import java.lang.reflect.Array;
         }
 
         public static void main(String[] args) throws IOException, JSONException {
-            JSONObject json2 = so4308554.JsonReader.readJsonFromUrl("https://api.github.com/repos/andre-vg/NetbeansCurriculo/languages");
-            
-            int num_lang2 = json2.length();
-            
-            String[] nomes2 = json2.names().toString().replace("[", "").replace("]", "").replace("\"", "").split(",");            
-            
-            int aux = 0;
-            System.out.println(json2.toString());
-
-            System.out.println(json2.get("CSS"));
-            System.out.println(nomes2[2]);
+            String nome;
+            nome = "andre";
+            JSONObject json = so4308554.JsonReader.readJsonFromUrl("https://api.nationalize.io/?name=" + nome);
+            String url = json.toString();
+            System.out.println(url);
                       
                     
         }

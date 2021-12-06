@@ -1,9 +1,11 @@
+<%-- 
+    Document   : form
+    Created on : 06/12/2021, 14:35:27
+    Author     : agonçalves
+--%>
+
+<%@page contentType="text/html" pageEncoding="UTF-8"%>
 <!DOCTYPE html>
-<!--
-To change this license header, choose License Headers in Project Properties.
-To change this template file, choose Tools | Templates
-and open the template in the editor.
--->
 <html>
     <head>
         <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
@@ -16,11 +18,17 @@ and open the template in the editor.
         <div class="titulo">
             <h1>Know your Name!</h1>
         </div>
-        <form class="form-nome" method="POST" action="http://namenationality-env.eba-ueye6hr4.sa-east-1.elasticbeanstalk.com/index.jsp">
+        <form name="form-nome" method="POST" action="http://namenationality-env.eba-ueye6hr4.sa-east-1.elasticbeanstalk.com/index.jsp">
             <div class="box_name">
                 <input type="text" placeholder="Seu Nome" id="name">
             </div>
-            <input class="btn btn-outline-secondary" type='submit' id='nome'>
+            <input class="btn btn-outline-secondary" type="submit" id="nome">
         </form>
+        
+        <code>
+            <%String nome = request.getParameter("name");
+            System.out.println(nome);
+            %>
+        </code>
     </body>
 </html>
